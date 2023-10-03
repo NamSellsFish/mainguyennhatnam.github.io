@@ -125,18 +125,20 @@ layout: default
       <p>
         {{ post.excerpt }}
         <br>
+<!-- Fix tạm riêng cho page mình {{ site.url }}{{ post.url }} -->
         <a style="padding-left: 1em" href="{{ site.url }}{{ post.url }}"><em>>> View post</em></a>
       </p>
     </div>
     {% endif %}
 
+<!-- Fix tạm riêng cho page mình {{ site.url }}{{ post.url }} -->
     {% if post.image.feature %}
     <div class="post-image-feature">
       <img src=
       {% if post.image.feature contains 'http' %}
       "{{ post.image.feature }}"
       {% else %}
-      "{{ site.url }}/img/{{ post.image.feature }}"
+      "{{ site.url }}{{ post.url }}/img/{{ post.image.feature }}"
       {% endif %}
       alt="{{ post.title }} feature image">
 
