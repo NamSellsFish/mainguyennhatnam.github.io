@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Favorite Book: \"How Not to Be Wrong: The Power of Mathematical Thinking\" by Jordan Ellenberg"
+title: 'Favorite Book: "How Not to Be Wrong: The Power of Mathematical Thinking" by Jordan Ellenberg'
 excerpt-separator: <!--more-->
 categories: ["Goodreads"]
 ---
