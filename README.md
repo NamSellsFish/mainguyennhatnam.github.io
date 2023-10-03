@@ -1,4 +1,4 @@
-# Thien Hoang's personal blog
+# Mai Nguyễn Nhật Nam's personal blog
 
 ## Technology used
 
