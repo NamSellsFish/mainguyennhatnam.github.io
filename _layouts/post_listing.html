@@ -136,7 +136,7 @@ layout: default
     <div class="post-image-feature">
       <img src=
       {% if post.image.feature contains 'http' %}
-      "{{ post.image.feature }}"
+      "{{ site.url }}{{ post.url }}{{ post.image.feature }}"
       {% else %}
       "{{ site.url }}{{ post.url }}/img/{{ post.image.feature }}"
       {% endif %}
