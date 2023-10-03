@@ -17,7 +17,7 @@ Nói về đạo hàm, như các bạn học ở lớp 11, 12 thì đạo hàm b
     <span markdown="1">Đồ thị hàm $$z = f(x, y) = x^3y^2$$.</span>
 </div>
 
-Đạo hàm riêng _theo biến $$y$$_, ký hiệu là $$f_y$$ hoặc $$\frac{\partial z}{\partial y}$$ sẽ được tính giống như đạo hàm bình thường nếu ta xem tất cả các biến *khác* $$y$$ là hằng số. Với đạo hàm thường ta dùng chữ $$d$$, đạo hàm riêng ta dùng chữ $$\partial$$ (đọc là "del" hoặc "partial").
+Đạo hàm riêng _theo biến $$y$$_, ký hiệu là $$f_y$$ hoặc $$\frac{\partial z}{\partial y}$$ sẽ được tính giống như đạo hàm bình thường nếu ta xem tất cả các biến _khác_ $$y$$ là hằng số. Với đạo hàm thường ta dùng chữ $$d$$, đạo hàm riêng ta dùng chữ $$\partial$$ (đọc là "del" hoặc "partial").
 
 $$
     \frac{\partial z}{\partial y} = 2x^3y
@@ -104,7 +104,7 @@ $$
 \end{aligned}
 $$
 
-Tại các điểm input cụ thể, bạn có thể thay vào và tính ra được đạo hàm hướng tại điểm đó, còn gọi là tính độ dốc (slope). 
+Tại các điểm input cụ thể, bạn có thể thay vào và tính ra được đạo hàm hướng tại điểm đó, còn gọi là tính độ dốc (slope).
 
 Tốc độ thay đổi của hàm $$f$$:
 
@@ -122,5 +122,3 @@ Tại một điểm input cố định, hàm $$f$$ tăng nhanh nhất (max) khi 
 Do đó, người ta gọi gradient là chiều tăng nhanh nhất của hàm (direction of steepest ascent).
 
 Các contour lines nằm sát nhau sẽ gần như song song và cách nhanh nhất di chuyển giữa hai đường song song là qua đường vuông góc chung. Cách đi này trùng với hướng gradient, hệ quả là, gradient luôn vuông góc với các đường contour lines.
-
-
