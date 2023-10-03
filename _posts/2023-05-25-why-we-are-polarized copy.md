@@ -2,7 +2,7 @@
 layout: post
 title: 'Favorite Book: "Why We''re Polarized" by Ezra Klein'
 excerpt-separator: <!--more-->
-categories: ["Web Exercises"]
+categories: ["projects"]
 ---
 
 <div class="post-image-right">
