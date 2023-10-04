@@ -63,7 +63,7 @@ layout: default
         {% if post.image.feature contains 'http' %}
         "{{ post.image.feature }}"
         {% else %}
-        "{{ site.url }}/mainguyennhatnamblog.github.io/img/{{ post.image.feature }}"
+        "{{ site.url }}/img/{{ post.image.feature }}"
         {% endif %}
         alt="{{ post.title }} feature image">
   
@@ -137,7 +137,7 @@ layout: default
       {% if post.image.feature contains 'http' or page.image.feature contains 'https' %}
       "{{ post.image.feature }}"
       {% else %}
-      "{{ site.url }}/mainguyennhatnamblog.github.io/img/{{ post.image.feature }}"
+      "{{ site.url }}/img/{{ post.image.feature }}"
       {% endif %}
       alt="{{ post.title }} feature image">
 
