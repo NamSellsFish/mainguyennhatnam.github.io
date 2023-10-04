@@ -52,7 +52,7 @@ layout: default
         <p>
           {{ post.excerpt }}
           <br>
-          <a style="padding-left: 1em" href="{{ post.url }}"><em>>> View post</em></a>
+          <a style="padding-left: 1em" href="{{ post.link }}"><em>>> View post</em></a>
         </p>
       </div>
       {% endif %}
@@ -126,7 +126,7 @@ layout: default
         {{ post.excerpt }}
         <br>
 <!-- Fix tạm riêng cho page mình {{ site.url }}{{ post.url }} -->
-        <a style="padding-left: 1em" href="{{ post.url }}"><em>>> View post</em></a>
+        <a style="padding-left: 1em" href="{{ post.link }}"><em>>> View post</em></a>
       </p>
     </div>
     {% endif %}
