@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Favorite Book: "Why We''re Polarized" by Ezra Klein'
+title: 'Favorite Book: MURACH''S JAVA SERVLETS & JSP'
 excerpt-separator: <!--more-->
 categories: ["projects", "web dev exercises"]
 ---
