@@ -10,51 +10,50 @@ Hồi quy tuyến tính là một phương pháp tìm quan hệ tuyến tính gi
 Chẳng hạn, một cái máy theo dõi quãng đường của một chiếc xe chuyển động thẳng đều. Tại một $$n$$ thời điểm $$t_i$$, nó ghi lại xem xe đã đi được bao nhiêu mét (ký hiệu là $$s_i$$). Nhưng bạn biết thì thế giới thực chẳng bao giờ hoàn hảo được cả, máy đo có thể bị sai số do nguồn điện, đường xóc, vật cản, ... Và kết quả khi biểu diễn $$n$$ lần đo đó lên đồ thị, ta có hình sau (quan sát các điểm biểu diễn màu cam):
 
 <div class="post-image-left">
-    <a href="/img/linear-regression-2-graph.png" data-lightbox="lr" data-title="Minh họa hồi quy tuyến tính">
-        <img src="/img/linear-regression-2-graph.png">
+    <a href="{{site.url}}/img/linear-regression-2-graph.png" data-lightbox="lr" data-title="Minh họa hồi quy tuyến tính">
+        <img src="{{site.url}}/img/linear-regression-2-graph.png">
     </a>
     <p class="post-image-caption">Minh họa hồi quy tuyến tính. Trục tung là đại lượng độ dài đi được, trục hoành là đại lượng thời gian.</p>
 </div>
 
 Công việc của bạn là "chuẩn hóa" lại dữ liệu bị nhiễu này. Công việc chuẩn hóa có thể có nhiều mục đích, ví dụ như để tính vận tốc của xe, hoặc để dự đoán trong tương lai ở thời điểm $$t_{n+1}$$ thì xe đã di chuyển được bao xa.
 
-Bạn biết rằng đồ thị $$s$$-$$t$$ của vật chuyển động thẳng đều thì có đường thẳng (tuyến tính). Một trong những phương pháp phổ biến để phân tích quan hệ tuyến tính giữa hai đại lượng như quãng đường và thời gian trong bài toán này là *hồi quy tuyến tính* bằng phương pháp *bình phương tối thiểu*.
+Bạn biết rằng đồ thị $$s$$-$$t$$ của vật chuyển động thẳng đều thì có đường thẳng (tuyến tính). Một trong những phương pháp phổ biến để phân tích quan hệ tuyến tính giữa hai đại lượng như quãng đường và thời gian trong bài toán này là _hồi quy tuyến tính_ bằng phương pháp _bình phương tối thiểu_.
 
-Ý tưởng chính của phương pháp hồi quy tuyến tính là tìm ra đường thẳng như trong hình (gọi là *best fit line*), sao cho tổng bình phương của độ dài các đoạn màu xanh dương là nhỏ nhất.
+Ý tưởng chính của phương pháp hồi quy tuyến tính là tìm ra đường thẳng như trong hình (gọi là _best fit line_), sao cho tổng bình phương của độ dài các đoạn màu xanh dương là nhỏ nhất.
 
 Để cho tổng quát, mình sẽ ký hiệu $$y$$ là quãng đường đo được (thay cho $$s$$), còn $$x$$ là thời điểm đo (thay cho $$t$$).
 
 Từ tọa độ các điểm $$(x,y)$$ cho trước trên mặt phẳng, hãy lập bảng sau:
 
-
-|     |$$x$$  |$$y$$  |$$x^2$$  |$$y^2$$ |$$xy$$   |
-|:---:|:---:|:---:|:-----:|:----:|:-----:|
-|     |6    |3    |36     |9.    |18.    |
-|     |0.98 |0.63 |0.9604 |0.3969|0.6174 |
-|     |1.84 |0.67 |3.1856 |0.4489|1.2328 |
-|     |2.13 |1.27 |4.5369 |1.6129|2.7051 |
-|     |2.6  |1.52 |6.76   |2.3104|3.952  |
-|     |3.5  |1.54 |12.25  |2.3716|5.39   |
-|     |3.76 |2.04 |14.1376|4.1616|7.6704 |
-|     |4.14 |2.27 |17.1396|5.1529|9.3978 |
-|     |4.61 |2.14 |21.2521|4.5796|9.8654 |
-|     |1.51 |0.9  |2.2801 |0.81  |1.359  |
-|     |1.3  |0.54 |1.69   |0.2916|0.702  |
-|     |4.91 |2.59 |24.1081|6.7081|12.7169|
-|     |5.21 |3    |27.1441|9.    |15.63  |
-|     |5.69 |3.15 |32.3761|9.9225|17.9235|
-|     |6.48 |2.84 |41.9904|8.0656|18.4032|
-|     |0.79 |0.22 |0.6241 |0.0484|0.1738 |
-|     |0.51 |0.42 |0.2601 |0.1764|0.2142 |
-|Avg  |3.292|1.691|14.5232|3.8269|7.49029|
+|     | $$x$$ | $$y$$ | $$x^2$$ | $$y^2$$ | $$xy$$  |
+| :-: | :---: | :---: | :-----: | :-----: | :-----: |
+|     |   6   |   3   |   36    |   9.    |   18.   |
+|     | 0.98  | 0.63  | 0.9604  | 0.3969  | 0.6174  |
+|     | 1.84  | 0.67  | 3.1856  | 0.4489  | 1.2328  |
+|     | 2.13  | 1.27  | 4.5369  | 1.6129  | 2.7051  |
+|     |  2.6  | 1.52  |  6.76   | 2.3104  |  3.952  |
+|     |  3.5  | 1.54  |  12.25  | 2.3716  |  5.39   |
+|     | 3.76  | 2.04  | 14.1376 | 4.1616  | 7.6704  |
+|     | 4.14  | 2.27  | 17.1396 | 5.1529  | 9.3978  |
+|     | 4.61  | 2.14  | 21.2521 | 4.5796  | 9.8654  |
+|     | 1.51  |  0.9  | 2.2801  |  0.81   |  1.359  |
+|     |  1.3  | 0.54  |  1.69   | 0.2916  |  0.702  |
+|     | 4.91  | 2.59  | 24.1081 | 6.7081  | 12.7169 |
+|     | 5.21  |   3   | 27.1441 |   9.    |  15.63  |
+|     | 5.69  | 3.15  | 32.3761 | 9.9225  | 17.9235 |
+|     | 6.48  | 2.84  | 41.9904 | 8.0656  | 18.4032 |
+|     | 0.79  | 0.22  | 0.6241  | 0.0484  | 0.1738  |
+|     | 0.51  | 0.42  | 0.2601  | 0.1764  | 0.2142  |
+| Avg | 3.292 | 1.691 | 14.5232 | 3.8269  | 7.49029 |
 
 Sau đó bạn vẽ một đường thẳng đi qua điểm $$M(\overline{x}, \overline{y})$$ và điểm $$N\left(\frac{\overline{x^2}}{\overline{x}}, \frac{\overline{xy}}{\overline{x}}\right)$$ sẽ ra được best fit line. Với bảng kết quả trên, mình có được $$M(3.292, 1.691)$$, $$N(4.412, 2.251)$$, và $$\hat{y} = f(x) = 0.5a + 0.044$$.
 
 Kết quả:
 
 <div class="post-image-left">
-    <a href="/img/linear-regression-4-pygraph.png" data-lightbox="lr" data-title="Kết quả best fit line từ cách giải nhanh">
-        <img src="/img/linear-regression-4-pygraph.png">
+    <a href="{{site.url}}/img/linear-regression-4-pygraph.png" data-lightbox="lr" data-title="Kết quả best fit line từ cách giải nhanh">
+        <img src="{{site.url}}/img/linear-regression-4-pygraph.png">
     </a>
     <p class="post-image-caption">Kết quả best fit line từ cách giải nhanh</p>
 </div>
@@ -99,8 +98,8 @@ $$
 $$
 
 <div class="post-image-right">
-    <a href="/img/linear-regression-3d-3.png" data-lightbox="lr" data-title="Đồ thị a-b-g">
-        <img src="/img/linear-regression-3d-3.png">
+    <a href="{{site.url}}/img/linear-regression-3d-3.png" data-lightbox="lr" data-title="Đồ thị a-b-g">
+        <img src="{{site.url}}/img/linear-regression-3d-3.png">
     </a>
     <p class="post-image-caption">Đồ thị a-b-g</p>
 </div>
@@ -129,6 +128,7 @@ $$
    a\overline{x^2} + b\overline{x} = \overline{xy}\\
    a\overline{x} + b = \overline{y}\\
 \end{cases}
+
 
 $$
 
@@ -162,15 +162,11 @@ Lưu ý, đừng nhầm lẫn giữa $$k$$ (số phần tử của vector biến
 
 Bây giờ, chúng ta đạo hàm hàm $$g$$, có được:
 
-
-
 $$
 g'(\textbf{a}) = \sum_{i=1}^{n}\left(2\times\left[\begin{array}{c}x_{1,i} \\ \dots\\ x_{k,i}\end{array}\right]\left(\left[\begin{array}{ccc}x_{1,i} & \dots & x_{k,i}\end{array}\right]\times\textbf{a}-y_i\right)\right)
 $$
 
 Nếu đặt đạo hàm bằng 0, có phương trình sau:
-
-
 
 $$
 \sum_{i=1}^{n}\left[\begin{array}{c}x_{1,i} \\ \dots\\ x_{k,i}\end{array}\right]\times \left(\left[\begin{array}{ccc}x_{1,i} & \dots & x_{k,i}\end{array}\right]\times\textbf{a}\right) \color{red}=\color{black} \sum_{i=1}^{n}\left[\begin{array}{c}x_{1,i} \\ \dots\\ x_{k,i}\end{array}\right]\times y_i
@@ -193,17 +189,16 @@ $$
 \end{aligned}
 $$
 
-(kí hiệu $$\triangleq$$ là "đặt bằng, gán bằng") 
+(kí hiệu $$\triangleq$$ là "đặt bằng, gán bằng")
 
 và:
-
 
 $$
 \begin{aligned}
   &\sum_{i=1}^{n}\left[\begin{array}{c}x_{1,i} \\ \dots\\ x_{k,i}\end{array}\right]\times y_i\\
 
   =&\color{red}\left[\begin{array}{ccc}x_{1,1} & \dots & x_{1,n}\\ \vdots & \ddots & \vdots\\ x_{k,1} & \dots & x_{k,n}\end{array}\right]\color{black}\times\color{blue}\left[\begin{array}{c}y_1 \\ \dots \\ y_n\end{array}\right] \\
-  
+
   \triangleq&\ \color{red}\textbf{X}^T\color{black}\color{blue}\textbf{y}
 \end{aligned}
 $$
@@ -228,6 +223,6 @@ $$
 
 Như vậy chúng ta đã tìm ra được nghiệm bài toán.
 
-Xem [Jupyter Notebook](/nb/LinearRegression.html)
+Xem [Jupyter Notebook]({{site.url}}/nb/LinearRegression.html)
 
 Special thanks to my friends, Can Tran Thanh Trung, Vu Le The Anh, for their precious advice.

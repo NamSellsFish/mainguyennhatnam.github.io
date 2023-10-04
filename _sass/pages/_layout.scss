@@ -95,10 +95,10 @@
       margin-top: 1em;
       text-transform: lowercase;
       font-size: 85%;
-      color: $secondary;
+      color: $warning;
       &:hover,
       &:focus {
-        color: lighten($secondary, 14%);
+        color: lighten($warning, 14%);
       }
     }
   }
