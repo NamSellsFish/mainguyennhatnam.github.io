@@ -52,7 +52,7 @@ layout: default
         <p>
           {{ post.excerpt }}
           <br>
-          <a style="padding-left: 1em" href="{{ post.link }}"><em>>> View post</em></a>
+          <a style="padding-left: 1em" href="{{ site.url }}{{ post.url }}"><em>>> View post</em></a>
         </p>
       </div>
       {% endif %}
@@ -63,7 +63,7 @@ layout: default
         {% if post.image.feature contains 'http' %}
         "{{ post.image.feature }}"
         {% else %}
-        "{{ site.url }}/img/{{ post.image.feature }}"
+        "{{ site.url }}/mainguyennhatnamblog.github.io/img/{{ post.image.feature }}"
         {% endif %}
         alt="{{ post.title }} feature image">
   
@@ -126,7 +126,7 @@ layout: default
         {{ post.excerpt }}
         <br>
 <!-- Fix tạm riêng cho page mình {{ site.url }}{{ post.url }} -->
-        <a style="padding-left: 1em" href="{{ post.link }}"><em>>> View post</em></a>
+        <a style="padding-left: 1em" href="{{ site.url }}{{ post.url }}"><em>>> View post</em></a>
       </p>
     </div>
     {% endif %}
@@ -137,7 +137,7 @@ layout: default
       {% if post.image.feature contains 'http' or page.image.feature contains 'https' %}
       "{{ post.image.feature }}"
       {% else %}
-      "{{ site.url }}/img/{{ post.image.feature }}"
+      "{{ site.url }}/mainguyennhatnamblog.github.io/img/{{ post.image.feature }}"
       {% endif %}
       alt="{{ post.title }} feature image">
 
