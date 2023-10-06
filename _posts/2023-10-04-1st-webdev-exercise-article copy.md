@@ -2,7 +2,7 @@
 layout: post
 title: "Favorite Book: MURACH'S JAVA SERVLETS & JSP"
 excerpt-separator: <!--more-->
-categories: ["projects", "web dev exercises"]
+categories: ["Goodreads"]
 ---
 
 <div class="post-image-right">

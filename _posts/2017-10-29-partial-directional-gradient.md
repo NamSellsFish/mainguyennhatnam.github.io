@@ -11,8 +11,8 @@ Nói về đạo hàm, như các bạn học ở lớp 11, 12 thì đạo hàm b
 Đạo hàm riêng (partial derivative) cũng hoạt động trên nguyên tắc tương tự.
 
 <div class="post-image-left">
-    <a href="/img/partial-directional-gradient/x3y2.jpg" data-lightbox="pdg" data-title="Vòng mã hóa Caesar">
-        <img src="/img/partial-directional-gradient/x3y2.jpg">
+    <a href="{{site.url}}/img/partial-directional-gradient/x3y2.jpg" data-lightbox="pdg" data-title="Vòng mã hóa Caesar">
+        <img src="{{site.url}}/img/partial-directional-gradient/x3y2.jpg">
     </a>
     <span markdown="1">Đồ thị hàm $$z = f(x, y) = x^3y^2$$.</span>
 </div>
@@ -26,8 +26,8 @@ $$
 Khi xem $$x$$ là hằng số, mình sẽ dùng một mặt phẳng, chẳng hạn $$x=1$$, để cắt đồ thị $$z=x^3y^2$$.
 
 <div class="post-image-right">
-    <a href="/img/partial-directional-gradient/x3y2-cut.jpg" data-lightbox="pdg" data-title="Vòng mã hóa Caesar">
-        <img src="/img/partial-directional-gradient/x3y2-cut.jpg">
+    <a href="{{site.url}}/img/partial-directional-gradient/x3y2-cut.jpg" data-lightbox="pdg" data-title="Vòng mã hóa Caesar">
+        <img src="{{site.url}}/img/partial-directional-gradient/x3y2-cut.jpg">
     </a>
     <span markdown="1">Đồ thị hàm $$z = f(x, y) = x^3y^2$$.</span>
 </div>
@@ -64,15 +64,15 @@ Quan sát hình sau. Hai điểm cùng màu là một bộ input-output tương 
 <div class="row">
     <div class="col-xs-6">
         <div class="post-image">
-            <a href="/img/partial-directional-gradient/2d-input.png" data-lightbox="pdg" data-title="2D Input">
-                <img src="/img/partial-directional-gradient/2d-input.png">
+            <a href="{{site.url}}/img/partial-directional-gradient/2d-input.png" data-lightbox="pdg" data-title="2D Input">
+                <img src="{{site.url}}/img/partial-directional-gradient/2d-input.png">
             </a>
         </div>
     </div>
     <div class="col-xs-6">
         <div class="post-image">
-            <a href="/img/partial-directional-gradient/1d-output.png" data-lightbox="pdg" data-title="1D Output">
-                <img src="/img/partial-directional-gradient/1d-output.png">
+            <a href="{{site.url}}/img/partial-directional-gradient/1d-output.png" data-lightbox="pdg" data-title="1D Output">
+                <img src="{{site.url}}/img/partial-directional-gradient/1d-output.png">
             </a>
         </div>
     </div>
@@ -111,8 +111,8 @@ Tốc độ thay đổi của hàm $$f$$:
 $$\nabla_{\textbf{w}} f(\textbf{v}) = \nabla f\cdot\textbf{w}$$
 
 <div class="post-image-left">
-    <a href="/img/partial-directional-gradient/contour.jpg" data-lightbox="pdg" data-title="Contour map">
-        <img src="/img/partial-directional-gradient/contour.jpg">
+    <a href="{{site.url}}/img/partial-directional-gradient/contour.jpg" data-lightbox="pdg" data-title="Contour map">
+        <img src="{{site.url}}/img/partial-directional-gradient/contour.jpg">
     </a>
     <p class="post-image-caption">Contour map</p>
 </div>
