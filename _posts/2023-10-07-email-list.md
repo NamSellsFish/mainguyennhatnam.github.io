@@ -11,6 +11,18 @@ categories: ["projects", "web-dev-exs"]
 
 ## :star2: About the Project
 
+### :handshake: Contact
+
+- Release [here](d)
+
+- Source code [here](https://github.com/Louis3797/awesome-readme-template)
+
+### :left_right_arrow:Changes comparing to the Original requirements
+
+- 
+
+- 
+
 <!-- Screenshots -->
 
 ### :camera: Screenshots
@@ -64,9 +76,3 @@ categories: ["projects", "web-dev-exs"]
     <li><a href="https://circleci.com/">CircleCLI</a></li>
   </ul>
 </details>
-
-:handshake: Contact
-
-- Release [here](d)
-
-- Source code [here](https://github.com/Louis3797/awesome-readme-template)
