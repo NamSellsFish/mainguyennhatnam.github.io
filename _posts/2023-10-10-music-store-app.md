@@ -1,19 +1,19 @@
-```yaml
+```
 layout: post
 title: "Music Store Application"
 excerpt-separator: <!--more-->
 categories: ["projects", "web-dev-exs"]
 ```
 
-## ?†About the Project:
+## ğŸ†About the Project:
 
-### ?¤Contact
+### ğŸ¤Contact
 
 - Release [here](https://music-app-download.onrender.com/)
 
 - Source code [here](https://github.com/NamSellsFish/Music-Application)
 
-### ?“· Screenshots
+### ğŸ“·Screenshots
 
 <div align="center"> 
   <img src="{{site.url}}/img/download-app.jpg" alt="screenshot" />
@@ -22,7 +22,7 @@ categories: ["projects", "web-dev-exs"]
   <img src="{{site.url}}/img/cart-app.jpg" alt="screenshot" />
 </div>
 
-### ?‘¾ Tech Stack
+### ğŸ‘¾Tech Stack
 
 <details>
   <summary>- Client</summary>
