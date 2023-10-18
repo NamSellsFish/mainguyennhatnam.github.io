@@ -3,10 +3,7 @@ layout: post
 title: "Email list Application"
 excerpt-separator: <!--more-->
 categories: ["projects", "web-dev-exs"]
-
 ---
-
-### 
 
 <!-- About the Project -->
 
@@ -29,7 +26,7 @@ categories: ["projects", "web-dev-exs"]
 ### 👾 Tech Stack
 
 <details>
-  <summary>Client</summary>
+  <summary>- Client</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
@@ -38,7 +35,7 @@ categories: ["projects", "web-dev-exs"]
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>- Server</summary>
   <ul>
     <li><a href="https://www.java.com/en/">Java</a></li>
     <li><a href="https://maven.apache.org/">Maven</a></li>
@@ -48,9 +45,9 @@ categories: ["projects", "web-dev-exs"]
 </details>
 
 <details>
-<summary>DevOps</summary>
+<summary>- DevOps</summary>
   <ul>
     <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Tomcat</a></li>
+    <li><a href="https://tomcat.apache.org/">Tomcat</a></li>
   </ul>
 </details>
