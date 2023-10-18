@@ -5,15 +5,15 @@ excerpt-separator: <!--more-->
 categories: ["projects", "web-dev-exs"]
 ```
 
-## ğŸ†About the Project:
+## ?†About the Project:
 
-### ğŸ¤Contact
+### ?¤Contact
 
 - Release [here](https://music-app-download.onrender.com/)
 
 - Source code [here](https://github.com/NamSellsFish/Music-Application)
 
-### ğŸ“· Screenshots
+### ?“· Screenshots
 
 <div align="center"> 
   <img src="{{site.url}}/img/download-app.jpg" alt="screenshot" />
@@ -22,7 +22,7 @@ categories: ["projects", "web-dev-exs"]
   <img src="{{site.url}}/img/cart-app.jpg" alt="screenshot" />
 </div>
 
-### ğŸ‘¾ Tech Stack
+### ?‘¾ Tech Stack
 
 <details>
   <summary>- Client</summary>
