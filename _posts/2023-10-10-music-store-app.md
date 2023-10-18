@@ -22,7 +22,7 @@ categories: ["projects", "web-dev-exs"]
   <img src="{{site.url}}/img/cart-app.jpg" alt="screenshot" />
 </div>
 
-### 👾Tech Stack
+### 👾Tech Stack (click to see details)
 
 <details>
   <summary>- Client</summary>

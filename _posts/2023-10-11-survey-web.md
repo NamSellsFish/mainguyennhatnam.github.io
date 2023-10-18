@@ -23,7 +23,7 @@ categories: ["projects", "web-dev-exs"]
   <img src="{{site.url}}/img/survey-web.jpg" alt="screenshot" />
 </div>
 
-### 👾 Tech Stack
+### 👾 Tech Stack (click to see details)
 
 <details>
   <summary>- Client</summary>
