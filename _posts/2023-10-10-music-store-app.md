@@ -1,9 +1,9 @@
-```
+---
 layout: post
 title: "Music Store Application"
 excerpt-separator: <!--more-->
 categories: ["projects", "web-dev-exs"]
-```
+---
 
 ## 🎆About the Project:
 
